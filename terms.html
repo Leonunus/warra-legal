@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGU / CGV - Warra</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #e6edf3;
+            --text-dim: #8b949e;
+            --accent-color: #d4af37; /* Doré Warra */
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 24px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        h1 { color: var(--accent-color); font-size: 1.8em; margin-bottom: 5px; }
+        h2 { color: var(--accent-color); font-size: 1.4em; margin-top: 30px; border-left: 4px solid var(--accent-color); padding-left: 15px; }
+        h3 { color: var(--text-color); font-size: 1.1em; margin-top: 20px; text-decoration: underline; }
+        .update-date { color: var(--text-dim); font-size: 0.9em; margin-top: 10px; }
+        
+        .highlight-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        
+        .price-tag {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        
+        .contact-footer {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px dashed var(--accent-color);
+        }
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Optimisation pour l'affichage in-app */
+        @media (max-width: 600px) {
+            body { padding: 16px; font-size: 15px; }
+            h1 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>CGU / CGV – APPLICATION WARRA</h1>
+        <p>Conditions Générales d'Utilisation / Conditions Générales de Vente</p>
+        <p class="update-date">Dernière mise à jour : 2 février 2026</p>
+    </div>
+
+    <section>
+        <h2>1. PRÉSENTATION DE L'APPLICATION</h2>
+        <p>L'application <strong>Warra</strong> (ci-après « l'Application ») est un outil de reconnaissance de texte par Intelligence Artificielle (OCR), spécialisé dans le traitement de factures. Elle est éditée par un particulier domicilié à <strong>Fleury-les-Aubrais (45770), France</strong>.</p>
+    </section>
+
+    <section>
+        <h2>2. ACCÈS ET CRÉATION DE COMPTE</h2>
+        <p>L'utilisation de Warra nécessite obligatoirement la création d'un compte utilisateur (Email/Mot de passe).</p>
+        <div class="highlight-box">
+            <strong>Sécurité :</strong> L'utilisateur peut activer l'authentification biométrique (FaceID) pour faciliter l'accès à son compte. L'utilisateur est seul responsable de la confidentialité de ses identifiants.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. SERVICES ET MODÈLE ÉCONOMIQUE</h2>
+        <p>Warra propose un service de scan basé sur un système hybride :</p>
+
+        <h3>3.1. Offre de découverte</h3>
+        <p>Chaque nouvel utilisateur bénéficie de <strong>5 scans gratuits</strong> à la création de son compte pour tester la technologie.</p>
+
+        <h3>3.2. Achats de crédits (Packs de scans)</h3>
+        <ul>
+            <li>Pack 10 scans : <span class="price-tag">1,99 €</span></li>
+            <li>Pack 50 scans : <span class="price-tag">4,99 €</span></li>
+            <li>Pack 100 scans : <span class="price-tag">8,99 €</span></li>
+        </ul>
+        <p>Les crédits achetés n'ont pas de date de péremption tant que le compte est actif.</p>
+
+        <h3>3.3. Abonnement Premium</h3>
+        <p>Un abonnement à <span class="price-tag">3,99 € / mois</span> permet des scans illimités et l'accès à des fonctionnalités exclusives. L'abonnement est sans engagement et résiliable via l'App Store.</p>
+
+        <h3>3.4. Visionnage de publicités (Option gratuite)</h3>
+        <p>L'Utilisateur peut obtenir des crédits gratuitement : le visionnage complet de deux (2) publicités consécutives donne droit à un (1) crédit de scan. Cette option dépend de la disponibilité des inventaires de nos partenaires.</p>
+    </section>
+
+    <section>
+        <h2>4. FONCTIONNEMENT DE L'IA ET PROTECTION DES DONNÉES</h2>
+        <h3>4.1. Extraction de données</h3>
+        <p>L'IA extrait uniquement les données techniques nécessaires (montants, dates, numéros de facture). Aucune donnée personnelle non pertinente n'est exploitée.</p>
+        
+        <div class="highlight-box">
+            <h3>4.2. Politique "Zéro Stockage Photo"</h3>
+            <p>Pour garantir la confidentialité :</p>
+            <ul>
+                <li>Les photos sont traitées instantanément et <strong>ne sont pas stockées</strong> sur les serveurs après traitement.</li>
+                <li>En cas d'échec de lecture, la photo est immédiatement supprimée et aucun crédit n'est décompté.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. RESPONSABILITÉ</h2>
+        <p><strong>Erreurs de lecture :</strong> L'IA peut commettre des erreurs. L'utilisateur doit vérifier l'exactitude des données avant toute utilisation comptable ou légale.</p>
+        <p><strong>Disponibilité :</strong> L'Éditeur n'est pas responsable des interruptions liées à la maintenance ou aux pannes de l'infrastructure cloud.</p>
+    </section>
+
+    <section>
+        <h2>6. PROPRIÉTÉ INTELLECTUELLE</h2>
+        <p>L'interface, le logo, le nom "Warra" et les algorithmes sont la propriété exclusive de l'Éditeur. Toute reproduction est interdite.</p>
+    </section>
+
+    <section>
+        <h2>7. DROIT APPLICABLE ET LITIGES</h2>
+        <p>Les présentes CGU sont soumises au droit français. Tribunaux compétents : <strong>Orléans / Fleury-les-Aubrais</strong>.</p>
+    </section>
+
+    <section>
+        <h2>8. CONDITIONS GÉNÉRALES DE VENTE (CGV)</h2>
+        <p><strong>8.3. Processus de Paiement :</strong> Les achats sont effectués via le système sécurisé d'Apple (In-App Purchase).</p>
+        <p><strong>8.4. Livraison Immédiate :</strong> Les crédits ou l'accès premium sont actifs immédiatement après confirmation du paiement.</p>
+        
+        <div class="highlight-box">
+            <strong>8.5. Absence de droit de rétractation :</strong> 
+            Conformément à l’article L221-28 13° du Code de la consommation, en validant son achat, l'utilisateur accepte la fourniture immédiate du contenu numérique et <strong>renonce expressément à son droit de rétractation</strong>.
+        </div>
+        
+        <p><strong>8.6. Résiliation :</strong> L'abonnement est reconduit tacitement. Résiliation possible via les réglages Apple (Abonnements) au moins 24h avant le renouvellement.</p>
+    </section>
+
+    <div class="contact-footer">
+        <strong>Une question ?</strong><br>
+        Contactez l'assistance Warra à : <a href="mailto:contact@warra.app">contact@warra.app</a>
+    </div>
+
+</body>
+</html>
