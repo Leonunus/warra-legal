@@ -115,11 +115,13 @@
         <p>L'IA extrait uniquement les données techniques nécessaires (montants, dates, numéros de facture). Aucune donnée personnelle non pertinente n'est exploitée.</p>
         
         <div class="highlight-box">
-            <h3>4.2. Politique "Zéro Stockage Photo"</h3>
-            <p>Pour garantir la confidentialité :</p>
+            <h3>4.2. Stockage Sécurisé des Photos</h3>
+            <p>Pour garantir la confidentialité et permettre la consultation de vos documents sur tous vos appareils :</p>
             <ul>
-                <li>Les photos sont traitées instantanément et <strong>ne sont pas stockées</strong> sur les serveurs après traitement.</li>
-                <li>En cas d'échec de lecture, la photo est immédiatement supprimée et aucun crédit n'est décompté.</li>
+                <li>Les photos (factures et suivi) sont stockées de manière sécurisée dans des <strong>espaces de stockage privés (Buckets Supabase)</strong> situés en France.</li>
+                <li>L'accès à ces photos est strictement restreint à l'utilisateur propriétaire via des jetons d'authentification (JWT).</li>
+                <li><strong>Contrôle total :</strong> En cas de suppression d'un élément ou du compte par l'utilisateur, les fichiers associés sont définitivement supprimés des serveurs de stockage sous 30 jours.</li>
+                <li>En cas d'échec de lecture critique par l'IA lors du scan initial, la photo n'est pas conservée et aucun crédit n'est décompté.</li>
             </ul>
         </div>
     </section>
